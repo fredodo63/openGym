@@ -1,6 +1,6 @@
 [build]
   base = "frontend"
-  command = "npm run build"
+  command = "npm run build && mkdir -p dist/exercise-media && cp -r ../catalogue/media/. dist/exercise-media/"
   publish = "dist"
 
 [build.environment]
